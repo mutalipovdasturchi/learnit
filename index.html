@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Learning Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>IT Learning Hub</h1>
+        <p>Dasturlashni 0 dan o‘rganing 🚀</p>
+    </header>
+
+    <main class="cards">
+
+        <div class="card" onclick="openCourse('python')">
+            <h2>🐍 Python</h2>
+            <p>Backend va avtomatlashtirish uchun</p>
+        </div>
+
+        <div class="card" onclick="openCourse('css')">
+            <h2>🎨 CSS</h2>
+            <p>Web sahifalarni bezash</p>
+        </div>
+
+        <div class="card" onclick="openCourse('html')">
+            <h2>🌐 HTML</h2>
+            <p>Web sayt strukturasi</p>
+        </div>
+
+    </main>
+
+    <section id="course-content" class="hidden">
+        <h2 id="course-title"></h2>
+        <p>Darsni YouTube orqali o‘rganing:</p>
+        <a id="course-link" target="_blank">Darsni ko‘rish</a>
+        <br><br>
+        <button onclick="goBack()">⬅ Orqaga</button>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
